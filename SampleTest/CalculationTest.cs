@@ -1,5 +1,5 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using System;
+using Sample;
 
 namespace SampleTest
 {
@@ -7,8 +7,10 @@ namespace SampleTest
     public class CalculationTest
     {
         [TestMethod]
-        public void TestMethod1()
+        public void 足し算のテスト()
         {
+            Calculation calculation = new Calculation();
+            Assert.AreEqual(3, calculation.Add(1, 2));
         }
     }
 }

@@ -1,4 +1,4 @@
-name: MSBuild
+name: Auto test
 
 on: push
 

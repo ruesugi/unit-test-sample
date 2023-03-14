@@ -18,5 +18,5 @@ jobs:
       - name: Add msbuild to PATH
         uses: microsoft/setup-msbuild@v1.0.2
 
-      - run: dotnet build Sample.sln --configuration Release
+      - run: msbuild Sample.sln -property:Configuration=Release
       - run: dotnet test SampleTest/bin/Release/SampleTest.dll
